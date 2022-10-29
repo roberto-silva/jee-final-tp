@@ -20,11 +20,11 @@ public class StockController {
     @Path("/write-off/{id}")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response downStock()
+    public Response downStock(@PathParam("id")int id)
     {
         try
         {
-            stockService.write_off(1);
+            stockService.write_off(id);
             return  Response.status(Response.Status.OK).build();
         }
         catch (HTTPException e)
