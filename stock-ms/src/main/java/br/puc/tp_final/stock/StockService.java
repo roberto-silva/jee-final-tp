@@ -15,10 +15,9 @@ public class StockService {
         return "TODO";
     }
 
-    public boolean PedidoAceito(){
+    public boolean BaixaEmEstoqueComSucesso(){
         Random random = new Random();
-        int x = random.nextInt(10);
-
-        return x < 8;
+        int probabilidade = random.nextInt(100);
+        return probabilidade < 95;
     }
 }

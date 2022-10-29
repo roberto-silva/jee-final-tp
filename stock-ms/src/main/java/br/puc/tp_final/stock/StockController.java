@@ -27,9 +27,9 @@ public class StockController {
     }
 
     @GET
-    @Path("/teste-pedido-aceito")
+    @Path("/teste-probabilidade-baixa-estoque")
     @Consumes("application/json")
     public boolean TestePedidoAceito() {
-        return stockService.PedidoAceito();
+        return stockService.BaixaEmEstoqueComSucesso();
     }
 }
