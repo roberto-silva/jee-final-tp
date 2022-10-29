@@ -30,6 +30,6 @@ public class StockController {
     @Path("/teste-probabilidade-baixa-estoque")
     @Consumes("application/json")
     public boolean TestePedidoAceito() {
-        return stockService.BaixaEmEstoqueComSucesso();
+        return stockService.SimulaProbabilidadeBaixaEstoque();
     }
 }

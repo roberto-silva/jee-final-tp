@@ -15,7 +15,7 @@ public class StockService {
         return "TODO";
     }
 
-    public boolean BaixaEmEstoqueComSucesso(){
+    public boolean SimulaProbabilidadeBaixaEstoque(){
         Random random = new Random();
         int probabilidade = random.nextInt(100);
         return probabilidade < 95;
