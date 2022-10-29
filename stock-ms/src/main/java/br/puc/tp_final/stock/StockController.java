@@ -42,8 +42,7 @@ public class StockController {
     @Consumes("application/json")
     public String status()
     {
-        return  "tsteste";
-        //return stockService.status();
+        return stockService.status();
     }
 
 
